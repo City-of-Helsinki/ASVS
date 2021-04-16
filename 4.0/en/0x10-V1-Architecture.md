@@ -14,7 +14,7 @@ In this chapter, the ASVS covers off the primary aspects of any sound security a
 
 | # | Description | L1 | L2 | L3 | CWE | |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **1.1.1** | Verify the use of a secure software development lifecycle that addresses security in all stages of development. ([C1](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | | <a name="pookie1">since</a> |
+| **1.1.1** | <a name="pookie1"></a>Verify the use of a secure software development lifecycle that addresses security in all stages of development. ([C1](https://owasp.org/www-project-proactive-controls/#div-numbering)) | | ✓ | ✓ | |  |
 | **1.1.2** | Verify the use of threat modeling for every design change or sprint planning to identify threats, plan for countermeasures, facilitate appropriate risk responses, and guide security testing. | | ✓ | ✓ | 1053 | <a name="pookie0">why</a> |
 | **1.1.3** | Verify that all user stories and features contain functional security constraints, such as "As a user, I should be able to view and edit my profile. I should not be able to view or edit anyone else's profile" | | ✓ | ✓ | 1110 | <a name="pookie2">u</a> |
 | **1.1.4** | Verify documentation and justification of all the application's trust boundaries, components, and significant data flows. | | ✓ | ✓ | 1059 | <a name="pookie3">no</a> |
