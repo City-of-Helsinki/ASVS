@@ -17,9 +17,9 @@ All client communications should only take place over encrypted communication pa
 
 | # | Description | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
-| **9.1.1** | Verify that secured TLS is used for all client connectivity, and does not fall back to insecure or unencrypted protocols. ([C8](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 319 |
-| **9.1.2** | Verify using online or up to date TLS testing tools that only strong algorithms, ciphers, and protocols are enabled, with the strongest algorithms and ciphers set as preferred. | ✓ | ✓ | ✓ | 326 |
-| **9.1.3** | Verify that old versions of SSL and TLS protocols, algorithms, ciphers, and configuration are disabled, such as SSLv2, SSLv3, or TLS 1.0 and TLS 1.1. The latest version of TLS should be the preferred cipher suite. | ✓ | ✓ | ✓ | 326 |
+| **9.1.1** | <a name="v4.0.1-9.1.1">Verify</a> that secured TLS is used for all client connectivity, and does not fall back to insecure or unencrypted protocols. ([C8](https://www.owasp.org/index.php/OWASP_Proactive_Controls#tab=Formal_Numbering)) | ✓ | ✓ | ✓ | 319 |
+| **9.1.2** | <a name="v4.0.1-9.1.2">Verify</a> using online or up to date TLS testing tools that only strong algorithms, ciphers, and protocols are enabled, with the strongest algorithms and ciphers set as preferred. | ✓ | ✓ | ✓ | 326 |
+| **9.1.3** | <a name="v4.0.1-9.1.3">Verify</a> that old versions of SSL and TLS protocols, algorithms, ciphers, and configuration are disabled, such as SSLv2, SSLv3, or TLS 1.0 and TLS 1.1. The latest version of TLS should be the preferred cipher suite. | ✓ | ✓ | ✓ | 326 |
 
 ## V9.2 Server Communications Security Requirements
 
@@ -27,11 +27,11 @@ Server communications are more than just HTTP. Secure connections to and from ot
 
 | # | Description | L1 | L2 | L3 | CWE |
 | :---: | :--- | :---: | :---:| :---: | :---: |
-| **9.2.1** | Verify that connections to and from the server use trusted TLS certificates. Where internally generated or self-signed certificates are used, the server must be configured to only trust specific internal CAs and specific self-signed certificates. All others should be rejected. | | ✓ | ✓ | 295 |
-| **9.2.2** | Verify that encrypted communications such as TLS is used for all inbound and outbound connections, including for management ports, monitoring, authentication, API, or web service calls, database, cloud, serverless, mainframe, external, and partner connections. The server must not fall back to insecure or unencrypted protocols. |  | ✓ | ✓ | 319 |
-| **9.2.3** | Verify that all encrypted connections to external systems that involve sensitive information or functions are authenticated. |  | ✓ | ✓ | 287 |
-| **9.2.4** | Verify that proper certification revocation, such as Online Certificate Status Protocol (OCSP) Stapling, is enabled and configured. |  | ✓ | ✓ | 299 |
-| **9.2.5** | Verify that backend TLS connection failures are logged. |  |  | ✓ | 544 |
+| **9.2.1** | <a name="v4.0.1-9.2.1">Verify</a> that connections to and from the server use trusted TLS certificates. Where internally generated or self-signed certificates are used, the server must be configured to only trust specific internal CAs and specific self-signed certificates. All others should be rejected. | | ✓ | ✓ | 295 |
+| **9.2.2** | <a name="v4.0.1-9.2.2">Verify</a> that encrypted communications such as TLS is used for all inbound and outbound connections, including for management ports, monitoring, authentication, API, or web service calls, database, cloud, serverless, mainframe, external, and partner connections. The server must not fall back to insecure or unencrypted protocols. |  | ✓ | ✓ | 319 |
+| **9.2.3** | <a name="v4.0.1-9.2.3">Verify</a> that all encrypted connections to external systems that involve sensitive information or functions are authenticated. |  | ✓ | ✓ | 287 |
+| **9.2.4** | <a name="v4.0.1-9.2.4">Verify</a> that proper certification revocation, such as Online Certificate Status Protocol (OCSP) Stapling, is enabled and configured. |  | ✓ | ✓ | 299 |
+| **9.2.5** | <a name="v4.0.1-9.2.5">Verify</a> that backend TLS connection failures are logged. |  |  | ✓ | 544 |
 
 ## References
 
